@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>MUI</title>
+	<link rel="stylesheet" href="dist/css/mui.min.css" />
+     <style>
+        .title{
+            margin: 20px 15px 7px;
+            color: #6d6d72;
+            font-size: 15px;
+        }
+        .mui-icon-camera{
+            font-size: 30px;
+            color: blue;
+            line-height: 38px;
+        }
+        label{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">验房</h1>
+	</header>
+
+    <div class="mui-content">
+        <div class="mui-content-padded">
+            <div class="title">验房项目</div>
+            <form class="mui-input-group">
+                <div class="mui-input-row">
+                    <label>项目</label>
+                    <input type="text" placeholder="墙面" readonly>
+                </div>
+                <div class="mui-input-row">
+                    <label>描述</label>
+                    <input type="text" placeholder="" >
+                </div>
+                <div class="mui-input-row">
+                    <label>是否合格</label>
+                    <div class="mui-switch mui-switch-mini">
+                      <div class="mui-switch-handle"></div>
+                    </div>
+                </div>
+                <div class="mui-input-row">
+                    <label>添加照片</label>
+                    <span class="mui-icon mui-icon-camera"></span>
+                </div>
+                <ul class="mui-table-view mui-grid-view">
+                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                       <img class="mui-media-object" src="http://placehold.it/500x333">
+                    </li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                       <img class="mui-media-object" src="http://placehold.it/500x333">
+                    </li>
+                </ul>
+
+                <!-- divider -->
+                <div class="mui-input-row"></div>
+                <!-- divider -->
+
+                <div class="mui-input-row">
+                    <label>项目</label>
+                    <input type="text" placeholder="地面" readonly>
+                </div>
+                <div class="mui-input-row">
+                    <label>描述</label>
+                    <input type="text" placeholder="" >
+                </div>
+                <div class="mui-input-row">
+                    <label>是否合格</label>
+                    <div class="mui-switch mui-switch-mini">
+                      <div class="mui-switch-handle"></div>
+                    </div>
+                </div>
+                <div class="mui-input-row">
+                    <label>添加照片</label>
+                    <span class="mui-icon mui-icon-camera"></span>
+                </div>
+                <ul class="mui-table-view mui-grid-view">
+                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                       <img class="mui-media-object" src="http://placehold.it/500x333">
+                    </li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                       <img class="mui-media-object" src="http://placehold.it/500x333">
+                    </li>
+                </ul>
+
+                <!-- divider -->
+                <div class="mui-input-row"></div>
+                <!-- divider -->
+
+                <div class="mui-input-row">
+                    <label>项目</label>
+                    <input type="text" placeholder="梁柱" readonly>
+                </div>
+                <div class="mui-input-row">
+                    <label>描述</label>
+                    <input type="text" placeholder="" >
+                </div>
+                <div class="mui-input-row">
+                    <label>是否合格</label>
+                    <div class="mui-switch mui-switch-mini">
+                      <div class="mui-switch-handle"></div>
+                    </div>
+                </div>
+                <div class="mui-input-row">
+                    <label>添加照片</label>
+                    <span class="mui-icon mui-icon-camera"></span>
+                </div>
+                
+                <br>
+                <div class="mui-button-row">
+                    <button type="button" class="mui-btn mui-btn-primary" onclick="return false;">确认</button>&nbsp;&nbsp;
+                    <button type="button" class="mui-btn mui-btn-danger" onclick="return false;">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="dist/js/mui.min.js"></script>
+    <script>
+        mui('.mui-switch')['switch']();
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>MUI</title>
+	<link rel="stylesheet" href="dist/css/mui.min.css" />
+	<style>
+		h5{
+			line-height: 20px;
+		}
+		.mui-card-header{
+			color: #8f8f94;
+		}
+		#offCanvasSide{
+			color: #FFF;
+		}
+		#offCanvasSide .title {
+    		margin: 12px 15px 10px;
+		}
+		#offCanvasSide label{
+			color: #bbb;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable">
+		<!-- 主页面容器 -->
+		<div class="mui-inner-wrap">
+
+			<!-- 菜单容器 -->
+		    <aside id="offCanvasSide" class="mui-off-canvas-right">
+		      <div class="mui-scroll-wrapper">
+		        <div class="mui-scroll">
+		       		<div class="title">筛选条件</div>
+
+		       		<h5 class="mui-content-padded">状态</h5>
+		       		<form class="mui-input-group" style="background: none;">
+						<div class="mui-input-row mui-checkbox">
+							<label>已承接查验</label>
+							<input name="checkbox" value="" type="checkbox">
+						</div>
+						<div class="mui-input-row mui-checkbox">
+							<label>未承接查验</label>
+							<input name="checkbox" value="" type="checkbox">
+						</div>
+						<div class="mui-input-row mui-checkbox">
+							<label>已接房验收</label>
+							<input name="checkbox" value="" type="checkbox">
+						</div>
+						<div class="mui-input-row mui-checkbox">
+							<label>未接房验收</label>
+							<input name="checkbox" value="" type="checkbox">
+						</div>
+					</form>
+					<br>
+
+					<h5 class="mui-content-padded">区域</h5>
+					<form class="mui-input-group" style="background: none;">
+						<div class="mui-input-row mui-checkbox">
+							<label>都铎城邦 (云秀)</label>
+							<input name="checkbox" value="" type="checkbox">
+						</div>
+						<div class="mui-input-row mui-checkbox">
+							<label>众和康园</label>
+							<input name="checkbox" value="" type="checkbox">
+						</div>
+					</form>
+					<p style="margin: 25px 15px;">
+						<button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">
+							<span class="mui-icon mui-icon-search"></span> 检索
+						</button>
+					</p>
+		        </div>
+		      </div>
+		    </aside>
+
+			<!-- 主页面标题 -->
+			<header id="header" class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#offCanvasSide"></a>
+				<h1 class="mui-title">房屋验收</h1>
+			</header>
+
+			<!-- 主页面内容容器 -->
+			<div class="mui-content mui-scroll-wrapper">
+				<!-- 主界面具体展示内容 -->
+				<div class="mui-scroll">
+
+					<div class="mui-content-padded">
+						<h5>关键字搜索</h5>
+						<div class="mui-input-row mui-search">
+			    			<input type="search" class="mui-input-clear" placeholder="">
+						</div>
+						<h5>房源列表</h5>
+					</div>
+					
+			 		<div class="mui-card">
+						<div class="mui-card-content">
+							<a href="menu.html">
+								<div class="mui-card-header">都铎城邦(云秀) 1号院 1-1-601</div>
+								<div class="mui-card-content-inner">
+				                    <h5>承接查验: <span class="mui-badge mui-badge-success mui-pull-right">是</span></h5>
+				                    <h5>接房验收: <span class="mui-badge mui-badge-danger mui-pull-right">否</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-content">
+							<a href="menu.html">
+								<div class="mui-card-header">都铎城邦(云秀) 2号院 1-2-402</div>
+								<div class="mui-card-content-inner">
+				                    <h5>承接查验: <span class="mui-badge mui-badge-danger mui-pull-right">否</span></h5>
+				                    <h5>接房验收: <span class="mui-badge mui-badge-danger mui-pull-right">否</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-content">
+							<a href="menu.html">
+								<div class="mui-card-header">都铎城邦(云秀) 3号院 1-3-203</div>
+								<div class="mui-card-content-inner">
+				                    <h5>承接查验: <span class="mui-badge mui-badge-danger mui-pull-right">否</span></h5>
+				                    <h5>接房验收: <span class="mui-badge mui-badge-danger mui-pull-right">否</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-content">
+							<a href="menu.html">
+								<div class="mui-card-header">都铎城邦(云秀) 3号院 1-3-203</div>
+								<div class="mui-card-content-inner">
+				                    <h5>承接查验: <span class="mui-badge mui-badge-danger mui-pull-right">否</span></h5>
+				                    <h5>接房验收: <span class="mui-badge mui-badge-danger mui-pull-right">否</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="dist/js/mui.min.js"></script>
+	<script src="dist/js/jquery-1.12.4.min.js"></script>
+	<script>
+		(function($){
+		    $(".mui-scroll-wrapper").scroll({});
+		})(mui);
+		$(document).ready(function(){
+			$('.mui-card a').bind('tap',function(evt){
+				window.location.href = $(this).attr("href");		
+			})
+		});
+		$()
+	</script>
+</body>
+</html>

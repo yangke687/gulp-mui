@@ -31,6 +31,30 @@
 		.mui-card-content-inner .mui-badge:first-child{
 			margin-left: 10px;
 		}
+		.mui-card-footer h4{
+			font-size: 14px;
+			font-weight: 400;
+		}
+		.tippy{
+			position: relative;
+		}
+		.tippy-tooltip{
+			display: none;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		    color: #fff;
+		    border-radius: 4px;
+		    font-size: 12px;
+		    padding: 7px 8px;
+		    text-align: center;
+		    will-change: transform;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    background-color: #333;
+		    white-space: nowrap;
+		    z-index: 999;
+		}
 	</style>
 </head>
 <body>
@@ -90,7 +114,7 @@
 			<header id="header" class="mui-bar mui-bar-nav">
 				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 				<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#offCanvasSide"></a>
-				<h1 class="mui-title">房屋验收</h1>
+				<h1 class="mui-title">房源</h1>
 			</header>
 
 			<!-- 主页面内容容器 -->
@@ -113,26 +137,37 @@
 								<div class="mui-card-content-inner">
 				                    <h5>
 				                    	承接查验
-										<span class="mui-badge mui-badge-primary">17/05/19</span>
+										<div class="mui-badge mui-badge-primary tippy">
+											17/05/19
+											<span class="tippy-tooltip">
+												土建, 电气, 排水, 燃气
+											</span>
+										</div>
 				                    </h5>
 				                    <h5>接房验收
-				                    	<span class="mui-badge mui-badge-primary">17/05/01</span>
+				                    	<div class="mui-badge mui-badge-primary tippy">
+				                    		17/05/01
+				                    		<span class="tippy-tooltip">
+												电气, 排水, 燃气
+											</span>
+				                    	</div>
 				                    </h5>
 								</div>
 								<div class="mui-card-footer">
 									<div>
-									<h5>
-										承接查验不合格
-										<span class="mui-badge mui-badge-danger">土建</span>
-										<span class="mui-badge mui-badge-danger">电气</span>
-										<span class="mui-badge mui-badge-danger">排水</span>
-										<span class="mui-badge mui-badge-danger">燃气</span>
-									</h5>
-									<h5>
-										接房验收不合格
-										<span class="mui-badge mui-badge-danger">电气</span>
-										<span class="mui-badge mui-badge-danger">燃气</span>
-									</h5>
+										<h4>不合格项</h4>
+										<h5>
+											承接查验
+											<span class="mui-badge mui-badge-danger">土建</span>
+											<span class="mui-badge mui-badge-danger">电气</span>
+											<span class="mui-badge mui-badge-danger">排水</span>
+											<span class="mui-badge mui-badge-danger">燃气</span>
+										</h5>
+										<h5>
+											接房验收
+											<span class="mui-badge mui-badge-danger">电气</span>
+											<span class="mui-badge mui-badge-danger">燃气</span>
+										</h5>
 									</div>
 								</div>
 							</a>
@@ -145,25 +180,41 @@
 								<div class="mui-card-content-inner">
 				                    <h5>
 				                    	承接查验
-				                    	<span class="mui-badge mui-badge-primary">17/05/01</span>
-										<span class="mui-badge mui-badge-primary">17/05/19</span>
+				                    	<div class="mui-badge mui-badge-primary tippy">
+				                    		17/05/01
+				                    		<span class="tippy-tooltip">
+												电气, 排水
+											</span>
+				                    	</div>
+										<div class="mui-badge mui-badge-primary tippy">
+											17/05/19
+											<span class="tippy-tooltip">
+												电气, 燃气
+											</span>
+										</div>
 				                    </h5>
 				                    <h5>接房验收
-				                    	<span class="mui-badge mui-badge-primary">17/05/01</span>
+				                    	<div class="mui-badge mui-badge-primary tippy">
+				                    		17/05/01
+				                    		<span class="tippy-tooltip">
+												电气, 燃气
+											</span>
+				                    	</div>
 				                    </h5>
 								</div>
 								<div class="mui-card-footer">
 									<div>
-									<h5>
-										承接查验不合格
-										<span class="mui-badge mui-badge-danger">土建</span>
-										<span class="mui-badge mui-badge-danger">电气</span>
-										<span class="mui-badge mui-badge-danger">排水</span>
-									</h5>
-									<h5>
-										接房验收不合格
-										<span class="mui-badge mui-badge-danger">电气</span>
-									</h5>
+										<h4>不合格项</h4>
+										<h5>
+											承接查验
+											<span class="mui-badge mui-badge-danger">土建</span>
+											<span class="mui-badge mui-badge-danger">电气</span>
+											<span class="mui-badge mui-badge-danger">排水</span>
+										</h5>
+										<h5>
+											接房验收
+											<span class="mui-badge mui-badge-danger">电气</span>
+										</h5>
 									</div>
 								</div>
 							</a>
@@ -176,24 +227,40 @@
 								<div class="mui-card-content-inner">
 				                    <h5>
 				                    	承接查验
-				                    	<span class="mui-badge mui-badge-primary">17/05/01</span>
-										<span class="mui-badge mui-badge-primary">17/05/03</span>
-										<span class="mui-badge mui-badge-primary">17/05/19</span>
+				                    	<div class="mui-badge mui-badge-primary tippy">
+				                    		17/05/01
+				                    		<span class="tippy-tooltip">
+												电气, 排水, 燃气
+											</span>
+				                    	</div>
+										<div class="mui-badge mui-badge-primary tippy">
+											17/05/03
+											<span class="tippy-tooltip">
+												电气, 排水, 燃气
+											</span>
+										</div>
+										<div class="mui-badge mui-badge-primary tippy">
+											17/05/19
+											<span class="tippy-tooltip">
+												电气, 燃气
+											</span>
+										</div>
 				                    </h5>
 				                    <h5>接房验收</h5>
 								</div>
 								<div class="mui-card-footer">
 									<div>
-									<h5>
-										承接查验不合格
-										<span class="mui-badge mui-badge-danger">土建</span>
-										<span class="mui-badge mui-badge-danger">电气</span>
-									</h5>
-									<h5>
-										接房验收不合格
-										<span class="mui-badge mui-badge-danger">电气</span>
-										<span class="mui-badge mui-badge-danger">燃气</span>
-									</h5>
+										<h4>不合格项</h4>
+										<h5>
+											承接查验
+											<span class="mui-badge mui-badge-danger">土建</span>
+											<span class="mui-badge mui-badge-danger">电气</span>
+										</h5>
+										<h5>
+											接房验收
+											<span class="mui-badge mui-badge-danger">电气</span>
+											<span class="mui-badge mui-badge-danger">燃气</span>
+										</h5>
 									</div>
 								</div>
 							</a>
@@ -206,26 +273,47 @@
 								<div class="mui-card-content-inner">
 				                    <h5>
 				                    	承接查验
-				                    	<span class="mui-badge mui-badge-primary">17/05/01</span>
-										<span class="mui-badge mui-badge-primary">17/05/03</span>
-										<span class="mui-badge mui-badge-primary">17/05/19</span>
+				                    	<div class="mui-badge mui-badge-primary tippy">
+				                    		17/05/01
+				                    		<span class="tippy-tooltip">
+												电气, 排水, 燃气
+											</span>
+				                    	</div>
+										<div class="mui-badge mui-badge-primary tippy">
+											17/05/03
+											<span class="tippy-tooltip">
+												电气, 排水, 燃气
+											</span>
+										</div>
+										<div class="mui-badge mui-badge-primary tippy">
+											17/05/19
+											<span class="tippy-tooltip">
+												电气, 排水, 燃气
+											</span>
+										</div>
 				                    </h5>
 				                    <h5>接房验收
-				                    	<span class="mui-badge mui-badge-primary">17/05/01</span>
+				                    	<div class="mui-badge mui-badge-primary tippy">
+				                    		17/05/01
+				                    		<span class="tippy-tooltip">
+												电气, 排水, 燃气
+											</span>
+				                    	</div>
 				                    </h5>
 								</div>
 								<div class="mui-card-footer">
 									<div>
-									<h5>
-										承接查验不合格
-										<span class="mui-badge mui-badge-danger">土建</span>
-										<span class="mui-badge mui-badge-danger">电气</span>
-									</h5>
-									<h5>
-										接房验收不合格
-										<span class="mui-badge mui-badge-danger">电气</span>
-										<span class="mui-badge mui-badge-danger">燃气</span>
-									</h5>
+										<h4>不合格项</h4>
+										<h5>
+											承接查验
+											<span class="mui-badge mui-badge-danger">土建</span>
+											<span class="mui-badge mui-badge-danger">电气</span>
+										</h5>
+										<h5>
+											接房验收
+											<span class="mui-badge mui-badge-danger">电气</span>
+											<span class="mui-badge mui-badge-danger">燃气</span>
+										</h5>
 									</div>
 								</div>
 							</a>
@@ -238,15 +326,33 @@
 	<script src="dist/js/mui.min.js"></script>
 	<script src="dist/js/jquery-1.12.4.min.js"></script>
 	<script>
+
 		(function($){
 		    $(".mui-scroll-wrapper").scroll({});
 		})(mui);
 		$(document).ready(function(){
 			$('.mui-card a').bind('tap',function(evt){
 				window.location.href = $(this).attr("href");		
+			});
+			// stop propagation
+			$('.mui-card-content-inner').bind('tap',function(evt){
+				evt.stopPropagation();
+			});
+			// tooltip
+			$('.tippy').bind('tap',function(evt){
+				evt.stopPropagation();
+				if(!$(this).hasClass('tapped')){
+					$('.tippy-tooltip').fadeOut();
+					$(this).children('.tippy-tooltip').fadeIn();
+					$(this).addClass('tapped');	
+				}
+				else{
+					$(this).removeClass('tapped');
+					$(this).children('.tippy-tooltip').fadeOut();
+				}
+				
 			})
 		});
-		$()
 	</script>
 </body>
 </html>

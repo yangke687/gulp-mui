@@ -21,6 +21,10 @@
         label{
             text-align: right;
         }
+        .mui-input-row.desc,
+        .mui-input-row.photo{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -38,16 +42,16 @@
                     <input type="text" placeholder="墙面" readonly>
                 </div>
                 <div class="mui-input-row">
-                    <label>描述</label>
-                    <input type="text" placeholder="" >
-                </div>
-                <div class="mui-input-row">
                     <label>是否合格</label>
                     <div class="mui-switch mui-active mui-switch-mini">
                       <div class="mui-switch-handle"></div>
                     </div>
                 </div>
-                <div class="mui-input-row">
+                <div class="mui-input-row desc">
+                    <label>描述</label>
+                    <input type="text" placeholder="" >
+                </div>
+                <div class="mui-input-row photo">
                     <label>添加照片</label>
                     <span class="mui-icon mui-icon-camera"></span>
                 </div>
@@ -69,16 +73,16 @@
                     <input type="text" placeholder="地面" readonly>
                 </div>
                 <div class="mui-input-row">
-                    <label>描述</label>
-                    <input type="text" placeholder="" >
-                </div>
-                <div class="mui-input-row">
                     <label>是否合格</label>
                     <div class="mui-switch mui-active mui-switch-mini">
                       <div class="mui-switch-handle"></div>
                     </div>
                 </div>
-                <div class="mui-input-row">
+                <div class="mui-input-row desc">
+                    <label>描述</label>
+                    <input type="text" placeholder="" >
+                </div>
+                <div class="mui-input-row photo">
                     <label>添加照片</label>
                     <span class="mui-icon mui-icon-camera"></span>
                 </div>
@@ -100,16 +104,16 @@
                     <input type="text" placeholder="梁柱" readonly>
                 </div>
                 <div class="mui-input-row">
-                    <label>描述</label>
-                    <input type="text" placeholder="" >
-                </div>
-                <div class="mui-input-row">
                     <label>是否合格</label>
                     <div class="mui-switch mui-active mui-switch-mini">
                       <div class="mui-switch-handle"></div>
                     </div>
                 </div>
-                <div class="mui-input-row">
+                <div class="mui-input-row desc">
+                    <label>描述</label>
+                    <input type="text" placeholder="" >
+                </div>
+                <div class="mui-input-row photo">
                     <label>添加照片</label>
                     <span class="mui-icon mui-icon-camera"></span>
                 </div>
@@ -124,8 +128,22 @@
     </div>
     
     <script src="dist/js/mui.min.js"></script>
+    <script src="dist/js/jquery-1.12.4.min.js"></script>
     <script>
         mui('.mui-switch')['switch']();
+        $(document).ready(function(){
+            $('.mui-switch').bind("toggle",function(event){
+                var desc = $(this).parents('.mui-input-row').next('.desc');
+                var photo = $(this).parents('.mui-input-row').next('.desc').next('.photo');
+              if(event.detail.isActive){
+                desc.fadeOut();
+                photo.fadeOut();
+              }else{
+                desc.fadeIn();
+                photo.fadeIn();
+              }
+            });
+        });
     </script>
 </body>
 </html>

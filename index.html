@@ -55,6 +55,23 @@
 		    white-space: nowrap;
 		    z-index: 999;
 		}
+		.mui-icon-search{
+			color: #999 !important;
+		}
+		/*.keyword{
+			position: relative;
+		}
+		.keyword:after{
+			position: absolute;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    height: 1px;
+		    content: '';
+		    -webkit-transform: scaleY(.5);
+		    transform: scaleY(.5);
+		    background-color: #c8c7cc;
+		}*/
 	</style>
 </head>
 <body>
@@ -68,6 +85,19 @@
 		      <div class="mui-scroll-wrapper">
 		        <div class="mui-scroll">
 		       		<div class="title">筛选条件</div>
+					
+					<div class="keyword">
+			       		<div class="mui-content-padded">
+			       			<h5>关键字</h5>
+			       			<div class="mui-input-row mui-search" style="height: inherit;">
+								<input type="search" placeholder="">
+							</div>
+							<button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">
+								查询
+							</button>
+						</div>
+					</div>
+		       		<br>
 
 		       		<h5 class="mui-content-padded">状态</h5>
 		       		<form class="mui-input-group" style="background: none;">
@@ -103,7 +133,7 @@
 					</form>
 					<p style="margin: 25px 15px;">
 						<button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">
-							<span class="mui-icon mui-icon-search"></span> 检索
+							检索
 						</button>
 					</p>
 		        </div>
@@ -123,10 +153,10 @@
 				<div class="mui-scroll">
 
 					<div class="mui-content-padded">
-						<h5>关键字搜索</h5>
+						<!-- <h5>关键字搜索</h5>
 						<div class="mui-input-row mui-search">
 			    			<input type="search" class="mui-input-clear" placeholder="">
-						</div>
+						</div> -->
 						<h5>房源列表</h5>
 					</div>
 					
